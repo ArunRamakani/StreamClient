@@ -10,7 +10,7 @@ checkout the repository and run the below command to build the docker image in y
 
 Alternatively we can pull the docker image from the Docker Hub directly using the below command
 
-```docker pull arunramakani/stream-server```
+```docker pull arunramakani/stream-client```
 
 ## Run 
 
