@@ -1,4 +1,4 @@
-# StreamClient
+# Stream Client
 
 This is the stream client which can be connected to gRPC stream server to transmit data in a stream after authentication through gRPC metadata. This client also compresses the data over the stream to optimize the transfer
 
