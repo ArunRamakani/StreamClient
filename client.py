@@ -7,8 +7,7 @@ import datastream_pb2
 from grpc._cython.cygrpc import CompressionAlgorithm
 from grpc._cython.cygrpc import CompressionLevel
 
-SERVER_ADDRESS = "34.67.155.227:80"
-
+from sys import argv
 
 def client_streaming(stub):
     print("--------------Call ClientStreaming Method Begin--------------")
@@ -31,6 +30,8 @@ def main():
     chan_ops = [('grpc.default_compression_algorithm', CompressionAlgorithm.gzip),
             ('grpc.grpc.default_compression_level', CompressionLevel.high)]
  
+    script, SERVER_ADDRESS = argv
+    print(SERVER_ADDRESS)
     with grpc.insecure_channel(SERVER_ADDRESS, chan_ops) as channel:
         stub = datastream_pb2_grpc.GRPCDataStreamStub(channel)
         client_streaming(stub)
