@@ -1,3 +1,6 @@
+[![](https://images.microbadger.com/badges/version/arunramakani/stream-client.svg)](https://microbadger.com/images/arunramakani/stream-client "Get your own version badge on microbadger.com") [![](https://img.shields.io/docker/pulls/arunramakani/stream-client.svg)](https://img.shields.io/docker/pulls/arunramakani/stream-client.svg) [![](https://img.shields.io/docker/stars/arunramakani/stream-client.svg)](https://img.shields.io/docker/stars/arunramakani/stream-client.svg)
+
+
 # Stream Client
 
 This is the stream client that can connect to gRPC stream server to transmit data as streams after authentication through gRPC metadata. This client also compresses the data over the stream to optimize the transfer
